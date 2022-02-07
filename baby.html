@@ -1,0 +1,124 @@
+
+<html>
+<head>
+
+<style>
+/* 
+body {
+background-image: url("babyback.png");
+}
+ */
+ 
+#baby {
+position: fixed; 
+height: 101vh; 
+left: 0;
+top: -1vh; 
+}
+
+#babyback {
+position: absolute; 
+height: 300vh;
+z-index: -2;
+top: -1vh; 
+}
+
+.babybacks {
+position: absolute; 
+z-index: -1; 
+}
+
+#babybacka {
+top: 0; 
+}
+
+#babybackb {
+top: 0; 
+left: 60vw; 
+}
+
+#babybackc {
+top: 0; 
+right: -50vw; 
+}
+
+#babybackd {
+top: 90vh; 
+left: 90vw; 
+}
+
+
+div {
+z-index: 10; 
+position: fixed; 
+opacity: .9; 
+}
+
+#roundone {
+position: fixed; 
+width: 12vw; 
+z-index: 10; 
+top: 60vh; 
+left: 3vw; 
+animation-name: round; 
+animation-duration: 3s; 
+}
+
+@keyframes round {
+from {left: -6vw;}
+to {left: 3vw;}
+}
+
+@keyframes roundhover {
+from {top: 60vh;}
+to {top: 57vh;}
+}
+
+#roundone:hover {
+/* 
+animation-name: roundhover;
+animation-duration: .5s; 
+ */
+border-right: 6px dashed black;  
+border-top: 6px dashed black;  
+transform: rotate(360deg);/* 
+
+transform: scaleX(3); 
+ */
+transition-duration: 1s; 
+}
+
+#roundone:active {
+border-right: 3px dashed blue; 
+border-top: 3px dashed blue; 
+transition-duration: .1s; 
+}
+
+
+
+div {
+
+text-shadow: 1px 1px 3px white; 
+
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<img id="baby" src="babycut.png">
+<img id="babyback" src="babyback.png">
+<img class="babybacks" id="babybacka" src="babyback.png">
+<img class="babybacks" id="babybackb" src="babyback.png">
+<img class="babybacks" id="babybackc" src="babyback.png">
+<img class="babybacks" id="babybackd" src="babyback.png">
+<a href="babytwo.html"><img id="roundone" src="roundone.png"></a>
+
+<div>baby wakes<br>
+in a dome bit </div>
+
+</body>
+</html>

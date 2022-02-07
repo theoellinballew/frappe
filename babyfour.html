@@ -1,0 +1,144 @@
+
+<html>
+<head>
+
+<style>
+/* 
+body {
+background-image: url("babyback.png");
+}
+ */
+
+div {
+z-index: 10; 
+position: fixed; 
+opacity: .9; 
+}
+
+#mybaby {
+position: relative;     
+padding: 60vw; 
+width: 21vw; 
+left: 20vw;
+top: 0; 
+
+}
+
+#roundone {
+position: fixed; 
+width: 12vw; 
+z-index: 10; 
+bottom: 9vw; 
+left: 72vw; 
+animation-name: round; 
+animation-duration: 3s; 
+}
+
+@keyframes round {
+from {bottom: -6vw;}
+to {bottom: 9vw;}
+}
+
+/* 
+@keyframes roundhover {
+from {top: 60vh;}
+to {top: 57vh;}
+}
+ */
+
+
+#roundone:hover {
+border-right: 6px dashed black;  
+border-top: 6px dashed black;  
+transform: rotate(360deg);
+transition-duration: 1s; 
+}
+
+#roundone:active {
+border-right: 3px dashed blue; 
+border-top: 3px dashed blue; 
+transition-duration: .1s; 
+}
+
+#back {
+position: fixed; 
+height: 103vh;
+left: -10; 
+z-index: -20; 
+top:      -3px; 
+}
+
+#backtwo {
+position: fixed; 
+height: 103vh;
+left: 30vw; 
+z-index: -20; 
+top:      -3px; 
+}
+
+
+#backthree {
+position: fixed; 
+height: 103vh;
+left: 80vw; 
+z-index: -20; 
+top:      -3px; 
+}
+
+
+#slide {
+height: 300vh; 
+width: 30vw;
+top: -1vh; 
+left: -1vw; 
+position: absolute; 
+}
+
+#slidetwo {
+height: 300vh; 
+width: 15vw;
+top: -1vh; 
+left: 75vw; 
+position: absolute; 
+}
+
+div {
+
+text-shadow: 1px 1px 3px white; 
+
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<img id="slide" src="slide.png">
+
+<img id="slidetwo" src="slide.png">
+<img id="back" src="station.png">
+
+<img id="backtwo" src="station.png">
+
+
+<img id="backthree" src="station.png">
+<!-- 
+<img id="mybaby" src="mybabyher.png">
+ -->
+
+<a href="baby.html"><img id="roundone" src="mybabyher.png"></a>
+
+<!-- 
+<div>
+
+baby?<br><br>"baby?"<br><br>no, gatorade<br>in the blue-eyed belly<br>does she have enough blood<br>button up while holding<br>our rights<br><br><br><br><br><br><br><br><br><br><br><br>baby blue<br><br>raspberry<br><br>no drink it</div>
+ -->
+ 
+ <div>
+
+baby?<br><br>"baby?"<br><br>gatorade<br>drink it up in <br>my blue-ribbed belly<br>does she have enough <br>raspberry we button up <br>while holding our <br><br><br><br><br><br><br><br><br><br><br><br>baby blue<br>no <br>it's raspberry<br><br>now drink it</div>
+
+</body>
+</html>

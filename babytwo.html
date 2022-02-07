@@ -1,0 +1,100 @@
+
+<html>
+<head>
+
+<style>
+/* 
+body {
+background-image: url("babyback.png");
+}
+ */
+
+div {
+z-index: 10; 
+position: fixed; 
+opacity: .9; 
+}
+
+#favorite {
+height: 60vh; 
+bottom: 0; 
+left: -1vw; 
+position: fixed; 
+}
+
+#roundone {
+position: fixed; 
+width: 12vw; 
+z-index: 10; 
+top: 9vh; 
+left: 24vw; 
+animation-name: round; 
+animation-duration: 3s; 
+}
+
+@keyframes round {
+from {top: -6vh;}
+to {top: 9vh;}
+}
+
+@keyframes turnhead {
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+}
+
+
+#roundone:hover {
+border-right: 6px dashed black;  
+border-top: 6px dashed black;  
+transform: rotate(360deg);
+transition-duration: 1s; 
+}
+
+#roundone:active {
+border-right: 3px dashed blue; 
+border-top: 3px dashed blue; 
+transition-duration: .1s; 
+}
+
+#head {
+z-index: -10; 
+position: absolute; 
+width: 90vw; 
+right: -24vw; 
+animation-name: turnhead; 
+animation-duration: 300s; 
+}
+
+#baby {
+width: 200vw; 
+z-index: -11; 
+position: absolute; 
+left: -1vw; 
+top: -1vw; 
+transform: rotate(180deg);
+}
+
+div {
+
+text-shadow: 1px 1px 3px white; 
+
+}
+
+
+</style>
+</head>
+
+
+<body>
+<img id="baby" src="baby.png">
+
+<!-- <img id="baby" src="babycut.png"> -->
+<img id="favorite" src="favman.png">
+<img id=head src="roundone.png">
+<a href="babythree.html"><img id="roundone" src="roundtwo.png"></a>
+
+<div>(baby wakes in a dome bit)<br>baby's mouths
+reach<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>(baby will <br>grow old)</div>
+
+</body>
+</html>

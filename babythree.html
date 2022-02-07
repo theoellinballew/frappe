@@ -1,0 +1,112 @@
+
+<html>
+<head>
+
+<style>
+/* 
+body {
+background-image: url("babyback.png");
+}
+ */
+
+div {
+z-index: 10; 
+position: fixed; 
+opacity: .9; 
+}
+
+#mybaby {
+position: fixed; 
+width: 60vw; 
+left: 20vw;
+top: 0; 
+
+}
+
+#roundone {
+position: fixed; 
+width: 12vw; 
+z-index: 10; 
+bottom: 3vh; 
+left: 9vw; 
+animation-name: round; 
+animation-duration: 3s; 
+}
+
+@keyframes round {
+from {left: -6vw;}
+to {left: 9vw;}
+}
+
+/* 
+@keyframes roundhover {
+from {top: 60vh;}
+to {top: 57vh;}
+}
+ */
+
+
+#roundone:hover {
+border-right: 6px dashed black;  
+border-top: 6px dashed black;  
+transform: rotate(360deg);
+transition-duration: 1s; 
+}
+
+#roundone:active {
+border-right: 3px dashed blue; 
+border-top: 3px dashed blue; 
+transition-duration: .1s; 
+}
+
+#wheel {
+z-index: -10; 
+position: fixed; 
+width: 45vw; 
+right: -24vw; 
+top: 60vh;
+/* 
+transform: rotate(180deg);
+transition-duration: 1s; 
+ */
+}
+
+#bigmybaby {
+width: 200vw; 
+z-index: -11; 
+position: absolute; 
+left: -1vw; 
+top: -30vw; 
+}
+
+#back {
+position: fixed; 
+width: 200vw; 
+left: -10; 
+z-index: -20; 
+top: -100vh; 
+}
+
+div {
+
+text-shadow: 1px 1px 3px white; 
+
+}
+
+
+</style>
+</head>
+
+
+<body>
+<img id="back" src="favman.png">
+<img id="mybaby" src="mybaby.png">
+<img id="bigmybaby" src="mybabyher.png">
+
+<a href="babyfour.html"><img id="roundone" src="favman.png"></a>
+
+<div><br><br><br><br><br><br><br><br><br><br><br><br>save my baby<br><br><br><br>
+"save my baby"<br><br><br><br><br><br><br><br><br><br><br><br>quiet, still<br>baby will grow old</div>
+
+</body>
+</html>

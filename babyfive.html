@@ -1,0 +1,104 @@
+
+<html>
+<head>
+
+<style>
+/* 
+body {
+background-image: url("babyback.png");
+}
+ */
+
+div {
+z-index: 10; 
+position: fixed; 
+opacity: .9; 
+}
+
+#mybaby {
+position: relative;     
+padding: 60vw; 
+width: 21vw; 
+left: 20vw;
+top: 0; 
+
+}
+
+#roundone {
+position: fixed; 
+width: 12vw; 
+z-index: 10; 
+bottom: 3vh; 
+left: 9vw; 
+animation-name: round; 
+animation-duration: 3s; 
+}
+
+@keyframes round {
+from {left: -6vw;}
+to {left: 9vw;}
+}
+
+/* 
+@keyframes roundhover {
+from {top: 60vh;}
+to {top: 57vh;}
+}
+ */
+
+
+#roundone:hover {
+border-right: 6px dashed black;  
+border-top: 6px dashed black;  
+transform: rotate(360deg);
+transition-duration: 1s; 
+}
+
+#roundone:active {
+border-right: 3px dashed blue; 
+border-top: 3px dashed blue; 
+transition-duration: .1s; 
+}
+
+#wheel {
+z-index: -10; 
+position: fixed; 
+width: 45vw; 
+right: -24vw; 
+top: 60vh;
+/* 
+transform: rotate(180deg);
+transition-duration: 1s; 
+ */
+}
+
+
+#back {
+position: absolute; 
+width: 60vw; 
+left: 30vw; 
+z-index: -20; 
+top:      0vh; 
+
+}
+
+
+</style>
+</head>
+
+
+<body>
+<img id="back" src="slide.png">
+
+<!-- 
+<img id="mybaby" src="mybabyher.png">
+ -->
+
+<a href="baby.html"><img id="roundone" src="mybabyher.png"></a>
+
+<div>
+
+baby?<br><br>"baby?"<br><br>no, gatorade<br>in the blue-eyed belly<br>does she have enough blood<br>button up while holding<br>our rights<br><br><br><br><br><br><br><br><br><br><br><br>baby blue<br><br>raspberry<br><br>no drink it</div>
+
+</body>
+</html>
