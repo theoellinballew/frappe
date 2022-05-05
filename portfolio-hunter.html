@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<head>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Tourney:wght@100&family=Asset&family=Ruslan+Display&family=Monofett&family=Playfair+Display&family=Faster+One&family=Moo+Lah+Lah&family=Rubik+Beastly&family=BIZ+UDPMincho&family=Wallpoet&display=swap" rel="stylesheet">
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+	<script src="portfolio-hunter.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="portfolio-hunter-js.js">
+       
+    </script>
+	<style>
+
+#header {
+ position: fixed; 
+ width: 3vw; 
+line-height: 3.9vh; 
+ writing-mode: vertical-rl;
+ left: 1.5vw; 
+ top: 0vh; 
+ border-radius: 30vw; 
+  text-align: center; 
+ font-size: 4.2vh; 
+/* font-family: 'Wallpoet'; */
+font-family: 'Tourney';
+/* 
+text-shadow: 1.5px 3px 3px blue;
+color: white; 
+ */
+color: blue;
+border-right:  .3vw blue dashed;
+ transform:translateY(100%);
+
+ animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+ 0%   {
+ transform: translateY(100%); 		
+ }
+ 100% {
+ transform: translateY(-100%); 
+ }
+
+
+
+ }
+ 
+
+   .menuitem:link {
+   color: black;
+   text-decoration: none; 
+   }
+
+   .menuitem:visited {
+   color: blue;
+   text-decoration: none; 
+   }
+
+   .menuitem:hover {
+   color: blue;
+   font-family: 'Wallpoet';
+   text-shadow: none; 
+   }
+   
+
+
+.name {
+
+font-size: 4.5vw; 
+line-height: 10.8vh;
+
+font-family: 'Ruslan Display'; 
+ text-shadow: 1px 1px 12px blue; 
+ color: white;
+/* 
+font-family: 'Wallpoet';
+text-shadow: 1.5px 3px 3px blue;
+color: white;
+ */
+left: 6vw; 
+position: relative; 
+}
+
+.name:hover {
+/* font-family: 'Tourney'; */
+font-family: Tourney;  
+color: blue; 
+text-shadow: 1.5px 3px 12px white;
+/* font-size: 6.45vw;  */
+
+}
+
+.name:active { 
+text-shadow: 1.5px 3px 3px blue; 
+}
+ 
+
+.des {
+display: none; 
+/* font-family: 'BIZ UDPMincho'; */
+font-family: 'Wallpoet';
+color: blue; 
+font-size: 15px; 
+text-align: justify; 
+position: fixed; 
+/* border-left: 12vw white dashed;  */
+width: 60vw; 
+right: 1vw;  
+top: 1vh; 
+border-left: 1.5vw blue dashed; 
+border-top:  1.5vw blue dashed; 
+border-bottom:  .9vw blue dashed; 
+border-right:  .3vw blue dashed; 
+background-color: white; 
+z-index: 10; 
+}
+
+.gifs {
+width: 60vw; 
+}
+
+/* 
+#back {
+z-index: -1; 
+position: fixed; 
+width: 105vw; 
+opacity: .01; 
+left: -3vw; 
+top: -3vh; 
+width: 300vw; 
+left: -100vw; 
+top: -200vh; 
+
+
+}
+ */
+ 
+ a:visited {
+ color: blue; 
+ }
+
+
+/* 
+#border {
+position: fixed; 
+top: -9vw; 
+right:9vw; 
+height: 60vw; 
+z-index: 100; 
+transform: rotate(90deg); 
+}
+	
+ */
+ 
+ 
+ #border {
+position: fixed; 
+top: 0vw; 
+right:0vw; 
+width: 66vw; 
+z-index: 100; 
+
+}
+
+/* 
+#square {
+position: fixed; 
+background-color:white; 
+top: 0 ; 
+left: 0; 
+width: 30px
+}
+ */
+ 
+ #babygif {
+ width: 48vw; 
+ }
+</style> 
+	
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+</head>
+<body>
+
+<div id=square></div>
+
+<!-- 
+<img id=border
+src="http://www.clipartandgraphics.com/images/borders/heartborder02.gif"
+border="0"/>
+ -->
+
+<!-- 
+<img id=border
+src="http://www.clipartandgraphics.com/images/borders/bwwaves.gif"
+border="0"/>
+ -->
+ 
+ <!-- 
+<a
+href="http://www.clipartandgraphics.com"><img
+src="http://www.clipartandgraphics.com/images/borders/keyboardborder.gif"
+border="0"/></a>
+ -->
+ 
+<!-- 
+ <a
+href="http://www.clipartandgraphics.com"><img
+src="http://www.clipartandgraphics.com/images/borders/grassborder.gif"
+border="0"/></a>
+ -->
+ 
+ <span class=name id=klepto>Klepto Garden<br></span> 
+
+<div class=des id=kleptodes>
+<a href="https://theo.land/kleptogarden.html"><img class=gifs src="works_samples/klepto-trimmed.gif">
+KLEPTOGARDEN documents an anonymous friend's ongoing practice of klepto-activism. During Covid lockdown, she began stealing from large companies known to have exploitative or politically violent practices (and to be benefitting from the current crisis). As a small white able-bodied upper-middle class cis woman, she is not identified as a threat in stores: she is particularly well-suited for this form of activism. Inspired by Moten/Harney and others, KLEPTOGARDEN promotes/normalizes stealing as a form of activism, while documenting my friend's own privilege and needs/wants. It is also, through the process of cropping and arranging these objects, an attempt to become more comfortable with AFK possessions, in general. This site is updated continually. </a>
+</div>
+<span class=name id=babies>Babies, Stud<br></span> 
+<div class=des id=babiesdes>
+<img class=gifs id=babygif src="works_samples/baby-trimmed.gif">
+From collection-in-progress, HAIRTIE. I did not dream for seven years, after a difficult period. In an easier period, I wanted to dream. So I looked for other covered-up things, misusing search engines via language I scraped (or imagined scraping) from my sleep... and I read what the internet wouldn’t normally show me: websites forgotten, arcane, or private. HAIR TIE is: 1) the side effects of building a cyborg subconscious, 2) future myths revealed by techno-divinations, and 3) what forced the tardy articulation of a mourning.
+</div>
+
+<span class=name id=belly>Before the Belly<br></span> 
+<div class=des id=bellydes>
+ <img class=gifs src="works_samples/belly-trimmed.gif">
+<a href="http://oral.pub/Belly.html">Web-based VR, 2021</a> BEFORE THE BELLY is a Biblical speculative fiction. Swallowed by whales, we learn to communicate as they do: over long distances, but without being watched or manipulated by big tech. When we’re reborn from their mouths, we retain that ability via “bits” of their bellies we carry with us—umbilical tools. Armed with that new cyborgian strength but suffering from traumatic amnesia, we try to remember the apocalypse we inhabited before being swallowed. <br><br>
+
+BEFORE THE BELLY stokes the radical possibilities of the biblical story of Jonah, whose rebirth was genderless and posthuman (via the whale): here, unlike in the original story, we enact our own birth; retain connection with those who bore us; are born not of God’s henchmen, but of instructors; are not alone, but collective; and, most importantly, learn not obedience, but rebellion.
+
+</div>
+ 
+ 
+ 
+<span class=name id=compose>+ Compose ^ Unread<br></span> 
+<div class=des id=composedes>
+ <img class=gifs src="works_samples/compose-trimmed.gif">
+For + COMPOSE ^ UNREAD, collaborators deleted/edited excerpts I’d chosen from Google’s Terms of Service and Google’s Privacy Policy. They then emailed me with the intervened texts spread across the subject line and the body. The final email installation (sent via screen_) shows excerpts from a video performance of myself “reading” the emails I received. <br><br>
++ COMPOSE ^ UNREAD is a communal attempt to invade/expand/violate language that contains/manipulates/tricks. We throw the altered language back in the face of its creators by embedding it in Gmail’s own system (first my personal inbox, and then the inboxes of everyone on _screen’s mailing list). This is primarily an aesthetic destabilization/glitch of Google’s power structures, but it also performs real microagression against Google by producing illegible data about myself and my friends. 
+</div>
+ 
+ 
+<span class=name id=out>Out the Red<br></span> 
+<div class=des id=outdes>
+OUT THE RED is a 7-minute video made in collaboration with cellist Mabe Fratti and video artist Maddie Butler. Executed in peak pandemic lockdown, it attempts digital connection-cum-self-preservation. Along the way, it pops and slices skins, tastes dry romance in the back of the neck, drags in coincidence and laundry. This is a piece about intense friendship, and longing for loved ones. 
+</div>
+
+
+<span class=name id=personal>Personal Website<br></span> 
+<div class=des id=personaldes>
+blah
+</div>
+
+<span class=name id=blister>Blister Skin<br></span> 
+<div class=des id=blisterdes>
+ <img class=gifs src="works_samples/blister-trimmed.gif">
+http://oral.pub/SoB/
+
+Though we are continually scrutinized and manipulated by big tech , we imagine our computers and phones as private spaces. BLISTER SKIN is a hyper-local and hyper-ephemeral intervention in this hallucination. Each page shows videos of friends’ computer screens as they look up their fears, and texts I wrote through those videos; all items are draggable and randomly placed. The videos, vulnerable not only in their content but in the digital tics they reveal, question our sense of being alone with our screens -- as the viewer usurps the gaze of big tech surveillance. 
+
+</div>
+
+
+<span class=name id=moon>Moon Drawn<br></span> 
+<div class=des id=moondes>
+ <img class=gifs src="works_samples/moon-trimmed.gif">
+http://oral.pub/MoonDrawn/
+MOON DRAWN was made in collaboration with cellist Mabe Fratti. When you enter the page, you hear one audio track. You also see one very large video with several smaller versions of the same video. When you click and hold the large video, it slowly becomes smaller to reveal another large video behind it. When you click on any of the smaller videos, which shrink upon hover, new audio tracks start, playing simultaneously with the original audio and/or each other. The result is a symphony that is different for every user. The site is also available in Spanish, with entirely different recordings. NOTE: MOON DRAWN has decayed somewhat since we first made it.
+</div>
+
+
+<span class=name id=oral>ORAL.pub<br></span> 
+<div class=des id=oraldes>
+ <img class=gifs src="works_samples/oral-trimmed.gif">
+oral oral
+</div>
+
+<span class=name id=gurgling>Gurgling Bird You Go<br></span> 
+<div class=des id=gurglingdes>
+ <img class=gifs src="works_samples/gurgling-trimmed.gif">
+http://oral.pub/GurglingBirdYouGo/
+http://oral.pub/GurglingBirdYouGo/Clock.html
+
+GURGLING BIRD YOU GO contains original language and numbers pulled from the time or the cursor position. Readers follow the direction “stay with me” by scrolling down with that text. They then follow the directions “hold on to me” and “don’t let me go” by trying to click and drag those texts. When they do so, they see that those texts quickly slip away from their cursors. Clicking on these elements also changes “stay with me” to “leave me,” and makes three longer texts appear further down on the page. GURGLING BIRD YOU GO is an experiment in making sentimental language tangible/real/strange again via physical interaction. 
+ </div>
+
+ 
+
+
+<span class=name id=front>The Front Lower</span> 
+<div class=des id=frontdes>
+ <img class=gifs src="works_samples/front-trimmed.gif">
+http://oral.pub/TheFrontLowerPartofYourNeck/
+</div>
+
+<div id=header >
+Theo Ellin Ballew<br>
+Portfolio for Hunter College 2022
+  </div>
+
+
+
+
+</body> 
+</html>
